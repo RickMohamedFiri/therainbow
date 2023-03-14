@@ -1,0 +1,90 @@
+body
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: #222;
+}
+
+
+div {
+  border: 10px solid #000; /* this is short hand for setting
+                            the border's width, its type, and color */
+  display: inline-block; /* a way of positioning elements */
+  min-width: 10em; /* the two min styles make the shape */
+  min-height: 15em; /* of the divs oblong*/
+  border-radius: 50%; /* this makes the normally square div round */
+  border-left-color: transparent; /* these remove the color from the left side */
+  border-right-color: transparent; /* the right side */
+  border-bottom-color: transparent; /* and the bottom of the circle */
+  animation: rotate 2s infinite;
+  animation-delay: 7s;
+}
+
+
+
+
+@keyframes rotate
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@keyframes shrink
+{
+  0%
+  {
+    transform: scale(0);
+  }
+
+  50%
+  {
+    transform: scale(1);
+  }
+
+  100%
+  {
+    transform: scale(0);
+  }
+}
+
+
+
+
+
+#red{
+  border-top-color: transparent;
+  animation: shrink 4s infinite;
+  animation-delay: 7s;
+
+}
+#orange{
+  border-top-color: #ffa500;
+}
+#yellow{
+  border-top-color: #ff0;
+}
+#green{
+  border-top-color: #00bc3f;
+}
+#blue{
+  border-top-color: #06f;
+}
+#indigo{
+  border-top-color:#8a2be2;
+}
+#violet{
+  border-top-color:#d300c9;
+}
